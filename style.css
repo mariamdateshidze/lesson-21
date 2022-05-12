@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+   
+}
+
+body{
+    background-color: rgb(169, 248, 235);
+}
+#enter-messenger-from {
+    padding: 30px;
+ }
+
+ #enter-messenger-from button{
+    padding: 10px 15px;
+    margin-left: 20px;
+    border: none;
+    background-color: blue;
+    color: aliceblue;
+    font-size: 16px;
+ }
+
+ #enter-messenger-input{
+    padding: 10px;
+    font-size: 18px;
+    margin-left: 200px;
+}
+ 
+ #enter-messenger-from.hide {
+   display: none;
+ }
+ .messenger-wrapper {
+     display: none;
+     justify-content: flex-start;
+     width: 100%;
+ }
+ .messenger-wrapper.visible {
+     display: flex;
+ }
+ .active-users {
+     width: 200px;
+     color: rgb(10, 127, 230);
+     font-size: 23px;
+ }
+ 
+ .messenger-body {
+     width: 100%;
+ }
+ .messages {
+    margin-bottom: 20px;
+ }
+ .messages .message-item {
+    padding: 10px;
+
+ }
+ textarea{
+     font-size: 18px;
+ }
+
+ #message-input {
+    padding: 10px;
+ 
+ }
+ #message-form button{
+    padding: 10px 15px;
+    margin-left: 20px;
+    border: none;
+    background-color: blue;
+    color: aliceblue;
+    font-size: 16px;
+ }
