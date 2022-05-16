@@ -75,6 +75,12 @@ function handleNewMessage(messageData) {
   messagesContainer.appendChild(newMessageDiv);
 }
 
-function userTypin(ws) {
-  ws.send(JSON.stringify({ type: 'userTyping', data:  newUserName }));
+// typing
+function userTypin(newUserName , ws) {
+  ws.send(JSON.stringify({ type: 'userTyping', data: newUserName  }));
+}
+
+// like
+function likedMessage(messageData, ws) {
+  ws.send(JSON.stringify({ type: 'messageLike', id:messageData }));
 }
